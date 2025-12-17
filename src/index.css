@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 100% 25%;
+    
+    --navy: 240 100% 25%;
+    --gold: 45 70% 53%;
+    --gold-light: 45 70% 73%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 100% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 100% 25%;
+
+    --primary: 240 100% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 70% 53%;
+    --secondary-foreground: 240 100% 25%;
+
+    --muted: 240 10% 96%;
+    --muted-foreground: 240 5% 45%;
+
+    --accent: 45 70% 53%;
+    --accent-foreground: 240 100% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 90%;
+    --input: 240 10% 90%;
+    --ring: 45 70% 53%;
+
+    --radius: 1rem;
+    
+    --shadow-soft: 0 4px 6px -1px hsl(240 100% 25% / 0.05), 0 2px 4px -2px hsl(240 100% 25% / 0.05);
+    --shadow-medium: 0 10px 15px -3px hsl(240 100% 25% / 0.08), 0 4px 6px -4px hsl(240 100% 25% / 0.08);
+    --shadow-large: 0 20px 25px -5px hsl(240 100% 25% / 0.1), 0 8px 10px -6px hsl(240 100% 25% / 0.1);
+  }
+
+  .dark {
+    --background: 240 100% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 100% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 100% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 70% 53%;
+    --primary-foreground: 240 100% 25%;
+
+    --secondary: 240 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 100% 20%;
+    --muted-foreground: 240 10% 70%;
+
+    --accent: 45 70% 53%;
+    --accent-foreground: 240 100% 25%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 100% 20%;
+    --input: 240 100% 20%;
+    --ring: 45 70% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
